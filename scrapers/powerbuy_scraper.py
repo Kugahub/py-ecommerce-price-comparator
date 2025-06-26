@@ -24,10 +24,10 @@ def scrape_powerbuy(driver, keyword, max_pages=10):
                 price = card.find_element(By.CSS_SELECTOR, '.text-redPrice').text.replace('฿', '').replace(',', '').strip()
                 link = card.find_element(By.CSS_SELECTOR, 'a').get_attribute('href')
                 all_products.append({
-                    'name': name,
+                    'title': name,
                     'price(THB)': float(price),
-                    'url': "https://www.powerbuy.co.th" + link,
-                    'platform': 'PowerBuy'
+                    'link': "https://www.powerbuy.co.th" + link,
+                    'source': 'PowerBuy'
                 })
             except Exception as e:
                 print("Skipping product:", e)
