@@ -6,7 +6,6 @@ This project is a **data pipeline for scraping product prices** from Thai e-comm
 
 - Scrapes prices from:
   - Lazada
-  - eBay
   - Power Buy (1 page limit)
 - Uses Selenium via remote Chrome container (`selenium/standalone-chrome`)
 - Runs daily via Apache Airflow
@@ -28,7 +27,7 @@ This project is a **data pipeline for scraping product prices** from Thai e-comm
 │   └── service_account.json            # GDrive API credentials
 └── scrapers/
 │   ├── lazada_scraper.py
-│   ├── ebay_scraper.py
+│   ├── ebay_scraper.py                 # Unused but can works
 │   ├── powerbuy_scraper.py
 │   └── compare.py                      # Merges and exports results
 │
