@@ -1,0 +1,8 @@
+pandas
+apache-airflow==2.6.3
+apache-airflow[cncf.kubernetes]
+selenium==4.11.2
+webdriver-manager==4.0.1
+openpyxl
+pydrive2
+beautifulsoup4
